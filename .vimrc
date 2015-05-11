@@ -3,21 +3,18 @@
 set number                " show line numbers
 set cursorline            " highlight current line
 
-set autowrite             " Write the old file out when switching between
-files.
-set pastetoggle=<F2>      " toggle indentation settings for pasting into
-Vim
+set autowrite             " Write the old file out when switching between files.
+set pastetoggle=<F2>      " toggle indentation settings for pasting into Vim
 
-set timeoutlen=500        "Ever notice a slight lag after typing the
-leader key + command? This lowers the timeout.
+set timeoutlen=500        "Ever notice a slight lag after typing the leader key + command? This lowers the timeout.
+
 
 
 " BETTER KEY MAPPINGS
 
 let mapleader = ','       "Change default leader key
 
-" Map escape key to jj -- much faster
-imap jj <esc>
+imap jj <esc>             " Map escape key to jj -- much faster
 
 " make saving and quiting more ergonomic
 nmap <leader>s :w <CR>
@@ -25,18 +22,16 @@ nmap <leader>q :q <CR>
 nmap <leader>n :noh <CR>
 
 
+
 " SEARCHING
 
-"Set incremental searching
-set incsearch
-
-"Highlight searching
-set hlsearch
-
+set incsearch             " Set incremental searching
+set hlsearch              " Highlight searching
 
 " case insensitive search
 set ignorecase
 set smartcase
+
 
 
 " SPLITS
@@ -45,10 +40,10 @@ set smartcase
 " Makes more sense than opening to the left
 nmap <leader>bv :bel vsp
 
-"Opens a vertical split and switches over (\v)
-nnoremap <leader>v <C-w>v<C-w>l
+nnoremap <leader>v <C-w>v<C-w>l      " Opens a vertical split and switches over (\v)
 
-"Easier Split Navigation
+
+" Easier Split Navigation
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
